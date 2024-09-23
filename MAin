@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rogers Resources</title>
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/114105250?v=4">
+</head>
+
+<body>
+  <div class="htmlcode">
+    <div class="alert">
+      <span class="closebtn">&times;</span>
+      <img src="https://drive.google.com/uc?id=13Rr_3wLFL-Dgx5sWOccBzHYwNg685NzN" alt="NOGG 5.0 Advertisement" width="2450" height="500">
+      <br>
+      <strong>Text (214)-250-2574 with your email included and you will be added to the NoGG Email Update List - Ad by <a href='https://madjikstuff.rf.gd/ '>Madjikware</a></strong>
+    </div>
+</div>
+<br>
+  <div class="disguise">
+    <select id="disguises" oninput="disguise()">
+      <option value="0">Select A Disguise...</option>
+      <option value="1">Google</option>
+      <option value="2">Skyward</option>
+      <option value="3">New Tab</option>
+      <option value="4">Google Classroom</option>
+      <option value="5">Google Docs</option>
+      <option value="6">Google Slides</option>
+      <option value="7">Prosper Portal</option>
+      <option value="8">Gmail</option>
+      <option value="9">Google Drive</option>
+      <option value="10">Edugence</option>
+      <option value="11">Sora</option>
+    </select>
+    <select id="backgrounds" oninput="background()">
+      <option value="0">Select A Background...</option>
+      <option value="1">Blue</option>
+    </select>
+  </div>
+  <div class="htmlcode">
+    <h1 class="text">Rogers Resources</h1>
+    <h2 class="text">Update Your Version <a href="https://github.com/RogersResources/main" target="_blank" rel="noopener noreferrer">Here</a>
+      <br>
+      <h2 class="text">Join The Discord <a href="https://discord.gg/bD6JFXdtg2" target="_blank" rel="noopener noreferrer">Here</a>
+        <br>
+        <button class="fullscreenbutton"><a href="data/other.html">Other Games</a></button>
+        <br>
+        <button id="fullscreen1" style="visibility:hidden" class="fullscreenbutton" onclick="openFullscreen();">Full Screen</button>
+        <br>
+        <button id="fullscreen2" style="visibility:hidden" class="fullscreenbutton" onclick="document.getElementById('myframe').style = 'border: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden'; window.scrollTo(0, 0); document.documentElement.style.overflow = 'hidden'; alert('Refresh the page to reset.');">Make Screen Cover Tab</button>
+        <div class="alert">
+          <span class="closebtn">&times;</span>
+          <strong>Hazard Hotkeys!</strong>
+          <br>
+          Press the key on your keyboard to switch to a different tab!
+          <br>
+          Heres a list of all Hazard Hotkeys:
+          <br>
+          <br>
+          Press the "Esc" to open Prosper Portal
+          <br>
+          Press the "~" or "`" to open Google Classroom
+          <br>
+          Press the "Tab" to open Skyward
+          <br>
+          Press the "🔍︎ (Search)" to open Gmail
+          <br>
+        </div>
+  </div>
+  <div>
+    <br>
+    <div class="select">
+      <select id="select" oninput="select()">
+        <option value="0">Select A Game...</option>
+        <option value="1">Try-A-Link!</option>
+        <option value="2">Retro Bowl</option>
+        <option value="3">Fall Boys</option>
+        <option value="4">Holy Unblocker</option>
+        <option value="5">Drift Hunters</option>
+        <option value="6">Burrito Bison</option>
+        <option value="7">10 More Bullets</option>
+        <option value="8">Launch Ball</option>
+        <option value="9">Asteroids</option>
+        <option value="10">Push And Fork</option>
+        <option value="11">The Pond</option>
+        <option value="12">Vitual Vacation</option>
+        <option value="13">Avabranch</option>
+        <option value="14">Ludum</option>
+        <option value="15">Js13k Games</option>
+        <option value="16">Sorades 13k</option>
+        <option value="17">Hexa Battle</option>
+        <option value="18">Branching Out</option>
+        <option value="19">Shape Experiment</option>
+        <option value="20">Zolmeister</option>
+        <option value="21">Binb</option>
+        <option value="22">WebMSX</option>
+        <option value="23">Javatari</option>
+        <option value="24">Google Baseball</option>
+        <option value="25">Magic Poser</option>
+        <option value="26">Spent</option>
+        <option value="27">Drift Boss</option>
+        <option value="28">Feed That Thing</option>
+        <option value="29">CubeForm</option>
+        <option value="30">Rise Higher</option>
+      </select>
+      <br>
+      <br>
+      <button class="submitbutton" id="caseinput2" style="visibility:hidden" onclick="format();">Format Link</button><input type="text" class="input" id="case" name="myText" style="visibility:hidden" placeholder="Type here..."><button class="submitbutton" id="caseinput" style="visibility:hidden" onclick="validate();">Submit</button>
+    </div>
+    <br>
+    <iframe id="myframe" style="position: relative; width: 100%; height: 1000px; border: 0; overflow: hidden;"></iframe>
+    <script>
+      onbeforeunload = () => 1
+      var elem = document.getElementById("myframe");
+
+      function openFullscreen() {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) {
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        }
+      }
+    </script>
+    <script>
+      function background() {
+        if (document.getElementById('backgrounds').value === '0') {
+          document.body.style.backgroundColor = "#330033";
+          document.body.background = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 800 800"%3E%3Cg fill="none" stroke="%23404" stroke-width="1"%3E%3Cpath d="M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63"/%3E%3Cpath d="M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764"/%3E%3Cpath d="M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880"/%3E%3Cpath d="M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382"/%3E%3Cpath d="M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269"/%3E%3C/g%3E%3Cg fill="%23505"%3E%3Ccircle cx="769" cy="229" r="5"/%3E%3Ccircle cx="539" cy="269" r="5"/%3E%3Ccircle cx="603" cy="493" r="5"/%3E%3Ccircle cx="731" cy="737" r="5"/%3E%3Ccircle cx="520" cy="660" r="5"/%3E%3Ccircle cx="309" cy="538" r="5"/%3E%3Ccircle cx="295" cy="764" r="5"/%3E%3Ccircle cx="40" cy="599" r="5"/%3E%3Ccircle cx="102" cy="382" r="5"/%3E%3Ccircle cx="127" cy="80" r="5"/%3E%3Ccircle cx="370" cy="105" r="5"/%3E%3Ccircle cx="578" cy="42" r="5"/%3E%3Ccircle cx="237" cy="261" r="5"/%3E%3Ccircle cx="390" cy="382" r="5"/%3E%3C/g%3E%3C/svg%3E';
+        }
+        if (document.getElementById('backgrounds').value === '1') {
+          document.body.style.backgroundColor = "#1C6D9E";
+        }
+      }
+      function disguise() {
+        if (document.getElementById('disguises').value === '0') {
+          changeFavicon('https://avatars.githubusercontent.com/u/114105250?v=4');
+          document.title = "Rogers Resources";
+        }
+        if (document.getElementById('disguises').value === '1') {
+          changeFavicon('http://www.google.com/favicon.ico');
+          document.title = "Google";
+        }
+        if (document.getElementById('disguises').value === '2') {
+          changeFavicon('https://skyward.iscorp.com/favicon.ico');
+          document.title = "Login - Powered by Skyward";
+        }
+        if (document.getElementById('disguises').value === '3') {
+          changeFavicon('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAeFJREFUOI2NkjtsUlEcxn+gkxwXYuQwc1lqIroKXYE68oqkDyQaE21qYoyP6NLF+AohpbaJMYVeuxWo0Rh5jPaxAh3qYOdymTnMx6HeazE18dvO/3y/nPN957i01prfUkpRrW/RaLbpWxYAQcPAMALkc3P4pc+24rLBZqvN0rtVlFKcJiEE+dwsmVTyD/it2eLl67enAn/r+dPHxGPRY1ApRTo7jVIjpPSRSSWJhK/9E/ZLyRnvhYuLV6+EABfWwKJULOD1evn85SsHBz+4NDGBX0pq9U9s7+7R7e0zGo042+3tUzE3yOdmCRoBwMX9Bw+drI1Wm1KxgMdzjkazBUCn28P98/CQzVqdvjVgMhKmWquNFaSUotFsMRkJOzPLsnDbi+WV1f8qx5bbL6VzfKfbZSoeQwiPYxDCQzqVoNPtObOgEcC1VjF1xfwIgJSSUrEAaKq1LQCm4lGChkEmO+N8inQygWs4HGr7KWz41s05QqHLnBcCIQQVc4PyuuncoPzhPW4hBAvz98aCv3j1hkx2hp3dPfrWgM1a3dnP53L4pTwu53o8xsL83bFsUvqIx6KU102UUgjh4dmTR2RSiWODPqGjfl8vLa/o/O07+vv2jj7qWzp9Y1qvVUw9HA5PWvUvJsnmMDQX24kAAAAASUVORK5CYII=');
+          document.title = "New Tab";
+        }
+        if (document.getElementById('disguises').value === '4') {
+          changeFavicon('https://ssl.gstatic.com/classroom/favicon.png');
+          document.title = "Classes";
+        }
+        if (document.getElementById('disguises').value === '5') {
+          changeFavicon('https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico');
+          document.title = "Google Docs";
+        }
+        if (document.getElementById('disguises').value === '6') {
+          changeFavicon('https://ssl.gstatic.com/docs/presentations/images/favicon5.ico');
+          document.title = "Google Slides";
+        }
+        if (document.getElementById('disguises').value === '7') {
+          changeFavicon('https://portal.prosper-isd.net/favicon.ico');
+          document.title = "Dashboard | RapidIdentity";
+        }
+        if (document.getElementById('disguises').value === '8') {
+          changeFavicon('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico');
+          document.title = ('Inbox (' + (Math.floor(Math.random() * 125) + 1) + ') - prosperisd000@k12.prosper-isd.net');
+        }
+        if (document.getElementById('disguises').value === '9') {
+          changeFavicon('https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png');
+          document.title = "My Drive - Google Drive";
+        }
+        if (document.getElementById('disguises').value === '10') {
+          changeFavicon('https://prosper.edugence.com/static/cacher/img/favicon.ico');
+          document.title = "https://prosper.edugence.com/student/#/dashboard";
+        }
+        if (document.getElementById('disguises').value === '11') {
+          changeFavicon('https://soraapp.com/assets/wishbone/10.16.2/assets/images/favicon-192.png');
+          document.title = "Sora";
+        }
+      }
+
+      function select() {
+        if (document.getElementById('select').value === '0') {
+          document.getElementById("myframe").src = ('');
+          document.getElementById("fullscreen1").style.visibility = 'hidden';
+          document.getElementById("fullscreen2").style.visibility = 'hidden';
+        }
+        if (document.getElementById('select').value === '1') {
+          document.getElementById("case").style.visibility = 'visible';
+          document.getElementById("caseinput").style.visibility = 'visible';
+          document.getElementById("caseinput2").style.visibility = 'visible';
+          document.getElementById('case').value = ''
+          document.getElementById("myframe").src = ('about:blank');
+        }
+        if (document.getElementById('select').value !== '1') {
+          document.getElementById("case").style.visibility = 'hidden';
+          document.getElementById("caseinput").style.visibility = 'hidden';
+          document.getElementById("caseinput2").style.visibility = 'hidden';
+        }
+        if (document.getElementById('select').value !== '0') {
+          document.getElementById("fullscreen1").style.visibility = 'visible';
+          document.getElementById("fullscreen2").style.visibility = 'visible';
+        }
+        if (document.getElementById('select').value === '2') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9kZWJiaWV3YXRlcm1hbnBoZC5jb20vdXBsb2Fkcy81LzUvNi83LzU1NjcxOTQvY3VzdG9tX3RoZW1lcy8yMzAxODgyOTI5MTAzMTg2NDEvZmlsZXMvcmIxLmh0bWw=');
+        }
+        if (document.getElementById('select').value === '3') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9kZWJiaWV3YXRlcm1hbnBoZC5jb20vdXBsb2Fkcy81LzUvNi83LzU1NjcxOTQvY3VzdG9tX3RoZW1lcy83OTA4NDY0NjE4MjgwOTUxMTQvZmFsbC1ib3lzLmh0bWw=');
+        }
+        if (document.getElementById('select').value === '4') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly91eHZ2eWthZi5vcmcv');
+        }
+        if (document.getElementById('select').value === '5') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly96YXlhcnV6b3N0cmVldG9yZ2FuLmNvbS91cGxvYWRzLzUvNS82LzcvNTU2NzE5NC9jdXN0b21fdGhlbWVzLzEzNjczNDkxNDQwMzIzMjA4MS9kcmlmdF9odW50ZXIuaHRtbA==');
+        }
+        if (document.getElementById('select').value === '6') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly96YXlhcnV6b3N0cmVldG9yZ2FuLmNvbS91cGxvYWRzLzUvNS82LzcvNTU2NzE5NC9jdXN0b21fdGhlbWVzLzYwNzcyMTkyMTkxNzMyMzY3MC9idXJyaXRvLWJpc29uLWxsLmh0bWw=');
+        }
+        if (document.getElementById('select').value === '7') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9hZHZhbmNlZC1jaGFubmVsZXIuMDIuZ3otYXNzb2NpYXRlcy5jb20vP3Q9dGFtLTEwLW1vcmUtYnVsbGV0cw==');
+        }
+        if (document.getElementById('select').value === '8') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9sYXVuY2hiYWxsLnNjaWVuY2VtdXNldW0ub3JnLnVrLw==');
+        }
+        if (document.getElementById('select').value === '9') {
+          document.getElementById("myframe").src = atob('aHR0cDovL3d3dy5kb3VnbWNpbm5lcy5jb20vaHRtbC01LWFzdGVyb2lkcw==');
+        }
+        if (document.getElementById('select').value === '10') {
+          document.getElementById("myframe").src = atob('aHR0cDovL2dlbGlzYW0uY29tL29jdG9jYXJpbmEv');
+        }
+        if (document.getElementById('select').value === '11') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly90aGVwb25kLnpvbG1laXN0ZXIuY29tLw==');
+        }
+        if (document.getElementById('select').value === '12') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly92aXJ0dWFsdmFjYXRpb24udXMv');
+        }
+        if (document.getElementById('select').value === '13') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9hdmFicmFuY2guem9sbWVpc3Rlci5jb20v');
+        }
+        if (document.getElementById('select').value === '14') {
+          document.getElementById("myframe").src = atob('aHR0cDovL29tYXJzaGVoYXRhLm1lL2h0bWwvbHVkdW0v');
+        }
+        if (document.getElementById('select').value === '15') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9qczEza2dhbWVzLmNvbS9lbnRyaWVzLzIwMjI=');
+        }
+        if (document.getElementById('select').value === '16') {
+          document.getElementById("myframe").src = atob('aHR0cDovL21hZXR0aWcuY29tL2NvZGUvY2FudmFzL3N0YXJzaGlwLXNvcmFkZXMtMTNrLw==');
+        }
+        if (document.getElementById('select').value === '17') {
+          document.getElementById("myframe").src = atob('aHR0cDovL2dpYWNvbW90YWcuaW8vaGIv');
+        }
+        if (document.getElementById('select').value === '18') {
+          document.getElementById("myframe").src = atob('aHR0cDovL2hlbnJ5aG9mZm1hbi5jb20vYnJhbmNoaW5nb3V0Lw==');
+        }
+        if (document.getElementById('select').value === '19') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9zaGFwZXgub3JnLw==');
+        }
+        if (document.getElementById('select').value === '20') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly96b3Auem9sbWVpc3Rlci5jb20v');
+        }
+        if (document.getElementById('select').value === '21') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9iaW5iLmNvLw==');
+        }
+        if (document.getElementById('select').value === '22') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly93ZWJtc3gub3JnLw==');
+        }
+        if (document.getElementById('select').value === '23') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9qYXZhdGFyaS5vcmcv');
+        }
+        if (document.getElementById('select').value === '24') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9sb2dvcy8yMDE5L2p1bHk0dGgxOS9yMy9qdWx5NHRoMTkuaHRtbA==');
+        }
+        if (document.getElementById('select').value === '25') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly93ZWJhcHAubWFnaWNwb3Nlci5jb20v');
+        }
+        if (document.getElementById('select').value === '26') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly9wbGF5c3BlbnQub3JnL2h0bWwv');
+        }
+        if (document.getElementById('select').value === '27') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly93d3cubWF0aHBsYXlncm91bmQuY29tL2RyaWZ0LWJvc3MtdjMvaW5kZXguaHRtbA==');
+        }
+        if (document.getElementById('select').value === '28') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly93d3cubWF0aHBsYXlncm91bmQuY29tL21vYmlsZV9mZWVkX3RoYXRfdGhpbmcvaW5kZXguaHRtbA');
+        }
+        if (document.getElementById('select').value === '29') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly93d3cubWF0aHBsYXlncm91bmQuY29tL2N1YmVmb3JtL2luZGV4Lmh0bWw');
+        }
+        if (document.getElementById('select').value === '30') {
+          document.getElementById("myframe").src = atob('aHR0cHM6Ly93d3cubWF0aHBsYXlncm91bmQuY29tL3Jpc2UtaGlnaGVyL2luZGV4Lmh0bWw');
+        }
+      }
+      var wage = document.getElementById("case");
+      wage.addEventListener("keydown", function(e) {
+        if (e.keyCode === 13) {
+          validate();
+        }
+      });
+
+      function validate() {
+        document.getElementById("myframe").src = (document.getElementById('case').value);
+      }
+
+      function format() {
+        document.getElementById("case").value = "https://www.";
+      }
+      const input = document.getElementById('case');
+      const end = input.value.length;
+      input.setSelectionRange(end, end);
+      input.focus();
+      const btn = document.getElementById('caseinput2');
+      btn.addEventListener('click', function handleClick() {
+        const end = input.value.length;
+        input.setSelectionRange(end, end);
+        input.focus();
+      });
+      document.addEventListener('keydown', function(event) {
+        if (event.keyCode == 192) {
+          location.href = "https://classroom.google.com/h";
+        } else if (event.keyCode == 9) {
+          location.href = "https://skyward.iscorp.com/scripts/wsisa.dll/WService=wseduprospertx/seplog01.w";
+        } else if (event.keyCode == 91) {
+          location.href = "https://mail.google.com/mail/u/0/#inbox";
+        } else if (event.keyCode == 27) {
+          location.href = "https://portal.prosper-isd.net/ui/dashboard";
+        }
+      });
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.opacity = "0";
+          setTimeout(function() {
+            div.style.display = "none";
+          }, 600);
+        }
+      }
+      document.head = document.head || document.getElementsByTagName('head')[0];
+
+      function changeFavicon(src) {
+        var link = document.createElement('link'),
+          oldLink = document.getElementById('dynamic-favicon');
+        link.id = 'dynamic-favicon';
+        link.rel = 'shortcut icon';
+        link.href = src;
+        if (oldLink) {
+          document.head.removeChild(oldLink);
+        }
+        document.head.appendChild(link);
+      }
+    </script>
+  </div>
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .disguise {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+      width: 50%;
+      white-space: nowrap;
+    }
+
+    .disguise select {
+      transition-duration: 0.4s;
+      font-family: Verdana;
+      display: inline-block;
+      width: 100%;
+      cursor: pointer;
+      padding: 10px 15px;
+      outline: 0;
+
+      border-radius: 100px;
+      background: #c08dff;
+      opacity: 0.5;
+      color: #000000;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    .disguise select::-ms-expand {
+      display: none;
+    }
+
+    .disguise select:hover,
+    .disguise select:focus {
+      color: #ffffff;
+      background: #9743ff;
+    }
+
+    .disguise select:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    body {
+      background: rgb(32, 36, 36);
+      background: linear-gradient(0deg, rgba(32, 36, 36, 1) 0%, rgba(144, 165, 255, 1) 50%, rgba(92, 218, 238, 1) 100%);
+    }
+
+    .htmlcode {
+      text-align: center;
+    }
+
+    .select {
+      text-align: center;
+    }
+
+    select {
+      text-align: center;
+    }
+
+    .fullscreenbutton {
+      border-radius: 100px;
+    }
+
+    .fullscreenbutton {
+      opacity: 0.5;
+      transition-duration: 0.4s;
+      background-color: #c08dff;
+      border: none;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+
+    .fullscreenbutton:hover {
+      background-color: #9743FF;
+      color: white;
+    }
+
+    .htmlcode {
+
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 17px;
+      letter-spacing: 0px;
+      word-spacing: 6px;
+      color: #9743FF;
+      font-weight: 700;
+      text-decoration: none solid rgb(68, 68, 68);
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+    }
+
+    ::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    .select {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+      width: 100%;
+
+    }
+
+    .select select {
+      transition-duration: 0.4s;
+      font-family: 'Arial';
+      display: inline-block;
+      width: 100%;
+      cursor: pointer;
+      padding: 10px 15px;
+      outline: 0;
+      border: 0px hidden #000000;
+      border-radius: 100px;
+      background: #c08dff;
+      opacity: 0.5;
+      color: #000000;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    .select select::-ms-expand {
+      display: none;
+    }
+
+    .select select:hover,
+    .select select:focus {
+      color: #ffffff;
+      background: #9743ff;
+    }
+
+    .select select:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    body {
+      background-color: #330033;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    ::placeholder {
+      color: black;
+    }
+
+    .input {
+      border-radius: 100px;
+    }
+
+    .input {
+      padding: 8px;
+      font-size: 17px;
+      background-color: #c08dff;
+      color: #000000;
+      border: none;
+      opacity: 0.5;
+    }
+
+    .input:focus {
+      outline: none;
+      color: black;
+    }
+
+    .submitbutton {
+      opacity: 0.5;
+      transition-duration: 0.4s;
+      background-color: #c08dff;
+      border: none;
+      border-radius: 100px;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+    }
+
+    .submitbutton:hover {
+      background-color: #9743FF;
+      color: white;
+    }
+
+    .alert {
+      padding: 10px;
+      background-color: #9743ff;
+      color: white;
+      font-size: 22px;
+      opacity: 0.5;
+      transition: opacity 0.6s;
+      margin-top: 30px;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      opacity: 0.5;
+      font-weight: bold;
+      float: right;
+      font-size: 30px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+      opacity: 0.5;
+    }
+  </style>
+</body>
+
+</html>
